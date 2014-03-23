@@ -12,14 +12,16 @@ table{border-collapse:collapse;border-spacing:0}
 
 #wrapper {
 	background-color: transparent;
-	margin-top: 8px;
+	margin:0;
+	width:100%;
 }
 #main-content {
 	color:white;
 	background-color: #096;
-	border-radius: 10px;
-	box-shadow: 0px 0px	10px #333;
+	/*border-radius: 10px;
+	box-shadow: 0px 0px	10px #333;*/
 	height: 1200px;
+	width:100%;
 }
 
 .main-message {
@@ -27,7 +29,7 @@ table{border-collapse:collapse;border-spacing:0}
 	font-size: 1.5em;
 	font-family: sans-serif;
 	line-height: 1.5em;
-	margin: 1.5em 0 1.5em 0.5em;
+	padding: 1.5em 0.5em;
 	text-align: right;
 	text-transform: uppercase;
 }
@@ -35,19 +37,27 @@ table{border-collapse:collapse;border-spacing:0}
 .alternative {
 	font-size: 1em;
 	line-height: 1em;
-	text-align: left;
+	max-height: 380px;
+	text-align: center;
 }
 
 .main-message:hover {
 	background-color: #0c6;
 }
 
+.alts {
+	max-height: 380px;
+	overflow:hidden;
+}
+
 .central-bar {
 	background-color: #ff9;
 	box-shadow: 0 0 10px #f96;
+	font-size:1.5em;
+	font-weight: bold;
 	left: -0.5em;
 	min-height:0.5em;
-	padding: 0.5em 1em;
+	padding: 2em 1em;
 	
 }
 
